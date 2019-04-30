@@ -13,7 +13,7 @@ var dir = path.resolve('emojis')
 if (!fs.existsSync(dir)) fs.mkdirSync(dir)
 
 request({
-    url: 'https://slackmojis.com/',
+    url: 'https://slackmojis.com/categories/19-random-emojis',
     json: false
 }).then(body => {
     var $ = cheerio.load(body);
